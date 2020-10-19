@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo10"
+    android:orientation="vertical"
+    android:textColor="#FFF7F7"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/c"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="160dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center"
+            android:layout_margin="125dp"
+            android:text="USUARIOS REGISTRADOS"
+            android:textColor="#000000"
+            android:textColorHighlight="#FAF5F5"
+            android:textColorHint="#E1DCDC" />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#FBFBFB"
+        android:textColorHighlight="#FBFBFB"
+        android:textColorHint="#FBFBFB" />
+
+
+</LinearLayout>

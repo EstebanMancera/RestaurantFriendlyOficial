@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="95dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+
+        android:layout_margin="25dp"
+        app:srcCompat="@drawable/logo1"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="BIENVENIDO/A!!\nINICIA SESIÓN "
+        android:textColor="#FAF1A1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:ems="18"
+        android:hint="@string/usuario"
+        android:drawableLeft="@drawable/usuario"
+        android:inputType="textEmailAddress"
+        android:textColor="#c7c7c7"
+        android:textColorHighlight="#F1ECEC"
+        android:textColorHint="#F6F5F5" />
+
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:ems="18"
+        android:hint="@string/contraseña"
+        android:drawableLeft="@drawable/pass"
+        android:inputType="textPassword"
+        android:textColor="#c7c7c7"
+        android:textColorHighlight="#F1F1F1"
+        android:textColorHint="#E1D7D7" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:layout_weight="0"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnentrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:backgroundTint="?android:attr/colorFocusedHighlight"
+            android:hint="@string/ingresar"
+            android:drawableLeft="@drawable/a"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="533dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"/>
+
+        <Button
+            android:id="@+id/btnregistrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/c"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:hint="@string/registrar"
+            tools:layout_editor_absoluteX="246dp"
+            tools:layout_editor_absoluteY="533dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
